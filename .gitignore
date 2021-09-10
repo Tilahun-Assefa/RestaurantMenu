@@ -1,0 +1,80 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+
+@Tilahun-Assefa
+KC-LC101-June-21-Java-Unit2
+/
+assignment-1-techjobs-console-edition-Tilahun-Assefa
+Private
+generated from Java-Unit-2-Independent-May-2021/techjobs-console-java-graded
+2
+00
+Code
+Issues
+Pull requests
+1
+Actions
+Projects
+Security
+Insights
+Settings
+assignment-1-techjobs-console-edition-Tilahun-Assefa/.gitignore
+@github-classroom
+github-classroom Initial commit
+Latest commit 08aff2b 13 days ago
+ History
+ 1 contributor
+35 lines (30 sloc)  365 Bytes
+
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+### macOS ###
+.DS_Store
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
