@@ -10,6 +10,17 @@ public class MenuItem {
     private double price;
     private String category;
     private boolean isMenuItemNew;
+    public MenuItem(int menuItemID, String description, double price, String category, boolean isNew) {
+        this.menuItemID = menuItemID;
+        this.description = description;
+        this.price = price;
+        this.category = category;
+        this.isMenuItemNew = isNew;
+    }
+
+    public MenuItem(int menuItemID, String description, double price) {
+        this(menuItemID, description, price, "main", true);
+    }
 
     public int getMenuItemID() {
         return menuItemID;
@@ -44,5 +55,29 @@ public class MenuItem {
     }
     public void setMenuItemNew(boolean menuItemNew) {
         isMenuItemNew = menuItemNew;
+    }
+
+    @Override
+    public String toString() {
+        return "MenuItem{" +
+                "menuItemID=" + menuItemID +
+                ", description='" + description + '\'' +
+                ", price=" + price +
+                ", category='" + category + '\'' +
+                ", menuNewStatus=" + isMenuItemNew +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MenuItem menuItem = (MenuItem) o;
+        return menuItemID == menuItem.menuItemID && description.equals(menuItem.description) && category.equals(menuItem.category);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(menuItemID, description, category);
     }
 }
